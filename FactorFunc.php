@@ -1,0 +1,43 @@
+<?php
+
+function factorialLoop(int $value): int
+{
+    $total = 1;
+
+    for ($i = 1; $i <= $value; $i++) {
+        $total *= $i;
+    }
+    return $total;
+}
+var_dump(factorialLoop(6));
+var_dump(6 * 5 * 4 * 3 * 2 * 1);
+
+function factorialRec(int $value): int
+{
+    if ($value == 1) {
+        return 1;
+    } else {
+        return $value * factorialRec($value - 1);
+    }
+}
+var_dump(factorialRec(6));
+
+/* 
+Kekurangan dari recursive function adalah 
+memori komputer akan mengalami stackoverflow error
+jika proses rekursif dilakukan secara intensif
+*/
+
+
+function terusLoop(int $value)
+{
+    if ($value == 0) {
+        echo "End loop" . PHP_EOL;
+    } else {
+        echo "Loop- $value" . PHP_EOL;
+        // buat nilai angkanya lebih besar seperti berikut
+        terusLoop($value-1_000_000);
+    }
+}
+
+terusLoop(3_000_000);
