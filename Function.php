@@ -2,7 +2,12 @@
 
 $set = true;
 
-if ($set) {
+if ($set) {    
+    /**
+     * sayHello
+     *
+     * @return void
+     */
     function sayHello()
     {
         echo "Hello Function" . PHP_EOL;
@@ -10,6 +15,13 @@ if ($set) {
 }
 sayHello();
 
+/**
+ * sum
+ *
+ * @param  mixed $first
+ * @param  mixed $second
+ * @return int
+ */
 function sum(int $first, int $second): int
 {
     $total = $first + $second;
@@ -22,6 +34,12 @@ var_dump($result);
 $result = sum(100, 100);
 var_dump($result);
 
+/**
+ * getFinalValue
+ *
+ * @param  mixed $value
+ * @return string
+ */
 function getFinalValue(int $value): string
 {
     if ($value >= 80) {
@@ -35,7 +53,7 @@ function getFinalValue(int $value): string
     } else {
         return "E";
     }
-    // statement setelah return tidak akan dieksekusi
+    # statement setelah return tidak akan dieksekusi
     // echo "Lah";
 }
 

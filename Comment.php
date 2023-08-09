@@ -5,10 +5,9 @@ menampilkan say Hi
 */
 
 /**
- * 
- * Saying Hi
+ * sayHi
+ *
  * @return void
- * 
  */
 function sayHi(): void
 {

@@ -5,5 +5,5 @@ function createName(){
 
 }
 createName();
-# Local scope variable tidak dapat diakses selain dalam function
+# Local scope variable tidak dapat diakses selain di dalam function
 // echo $name;

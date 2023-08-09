@@ -7,6 +7,13 @@ $sayHi = function (string $name) {
 
 $sayHi("Eko");
 
+/**
+ * sayGoodBye
+ *
+ * @param  mixed $name
+ * @param  mixed $filter
+ * @return void
+ */
 function sayGoodBye(string $name, $filter)
 {
     $finalName = $filter($name);

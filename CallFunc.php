@@ -1,4 +1,13 @@
 <?php
+
+
+/**
+ * sayHello
+ *
+ * @param  mixed $name
+ * @param  mixed $filter
+ * @return void
+ */
 function sayHello(string $name, callable $filter)
 {
     $finalName = call_user_func($filter, $name);

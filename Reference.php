@@ -6,6 +6,12 @@ $othName = &$name;
 $othName = "John";
 echo $name . PHP_EOL;
 
+/**
+ * increment
+ *
+ * @param  mixed $value
+ * @return void
+ */
 function increment(int &$value)
 {
     $value++;

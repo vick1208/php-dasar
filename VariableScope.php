@@ -2,6 +2,11 @@
 
 $name = "Dar"; #global scope
 
+/**
+ * sayHi
+ *
+ * @return void
+ */
 function sayHi()
 {
     global $name; #global keyword

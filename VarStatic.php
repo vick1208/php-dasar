@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * incrementing
+ *
+ * @return void
+ */
 function incrementing()
 {
     static $counter = 1; #static scope

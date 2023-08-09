@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * factorialLoop
+ *
+ * @param  mixed $value
+ * @return int
+ */
 function factorialLoop(int $value): int
 {
     $total = 1;
@@ -12,6 +18,12 @@ function factorialLoop(int $value): int
 var_dump(factorialLoop(6));
 var_dump(6 * 5 * 4 * 3 * 2 * 1);
 
+/**
+ * factorialRec
+ *
+ * @param  mixed $value
+ * @return int
+ */
 function factorialRec(int $value): int
 {
     if ($value == 1) {
@@ -29,6 +41,12 @@ jika proses rekursif dilakukan secara intensif
 */
 
 
+/**
+ * terusLoop
+ *
+ * @param  mixed $value
+ * @return void
+ */
 function terusLoop(int $value)
 {
     if ($value == 0) {
