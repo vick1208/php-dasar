@@ -52,10 +52,9 @@ function terusLoop(int $value)
     if ($value == 0) {
         echo "End loop" . PHP_EOL;
     } else {
-        echo "Loop- $value" . PHP_EOL;
-        // buat nilai angkanya lebih besar seperti berikut
-        terusLoop($value-1_000_000);
+        echo "Loop-$value" . PHP_EOL;
+        terusLoop($value - 1);
     }
 }
 
-terusLoop(3_000_000);
+terusLoop(3000000);
